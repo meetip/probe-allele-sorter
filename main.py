@@ -67,6 +67,10 @@ if data is not None:
             data=file,
             file_name="result.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
+    st.write('=================================')
+    for k,v in probe.items():
+        st.write(k," : ",v)
+    st.write('=================================')
     st.write(item_counts)
 
 
